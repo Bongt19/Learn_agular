@@ -1,0 +1,18 @@
+<div class="grid grid-cols-2 p-4 border border-gray-300 rounded" >
+  <!-- Header -->
+  <div class="font-semibold text-center">Thời gian</div>
+  <div class="font-semibold text-center">Số lượng</div>
+
+  <ng-container *ngFor="let item of products">
+    <a [routerLink]="['/detail', item.id]">
+      <div class="text-center">{{ item.date }}</div>
+    </a>
+    <a [routerLink]="['/detail', item.id]">
+      <div class="text-center">{{ item.quantity }}</div> 
+    </a>
+      
+         
+  </ng-container>
+
+</div>
+
